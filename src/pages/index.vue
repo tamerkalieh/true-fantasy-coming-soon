@@ -5,8 +5,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.set([".coming-soon-left", ".coming-soon-right"], { willChange: "transform", force3D: true });
-
 const handleHoverIn = () => {
   gsap.to(".color-d1034d", { color: "#1a1a1a", duration: 0.4 });
   gsap.to(".color-1a1a1a", { color: "#d1034d", duration: 0.4 });
@@ -32,6 +30,8 @@ const handleHoverOut = () => {
 };
 
 onMounted(() => {
+  gsap.set([".coming-soon-left", ".coming-soon-right"], { willChange: "transform", force3D: true });
+
   const tl = gsap.timeline({
     defaults: { ease: "none" },
     scrollTrigger: {
