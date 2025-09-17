@@ -18,7 +18,8 @@
 
       <section aria-labelledby="contact">
         <h2 id="contact">Kontakt</h2>
-        <p>Telefon: <span>[Telefonnummer einfügen]</span></p>
+        <p>Telefon: <a href="tel:+4917661270809" aria-label="Telefonnummer anrufen: 0176 6127 0809">0176 6127 0809</a>
+        </p>
         <p>E-Mail: <a href="mailto:info@true-fantasy.ai">info@true-fantasy.ai</a></p>
         <p>Web: <a href="https://www.true-fantasy.ai" target="_blank" rel="noopener">https://www.true-fantasy.ai</a></p>
       </section>
