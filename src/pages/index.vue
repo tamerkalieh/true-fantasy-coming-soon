@@ -101,7 +101,7 @@ onMounted(() => {
         25-28 SEPTEMBER 2025
       </div>
     </div>
-    <div class="flex gap-6 absolute bottom-4 right-4 text-white text-xl font-extralight font-poppins">
+    <div class="flex gap-6 absolute bottom-4 right-4 text-white text-2xl font-extralight font-poppins">
       <a href="/impressum">Impressum</a>
     </div>
   </div>

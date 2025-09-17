@@ -7,7 +7,7 @@ const routes = [
     component: () => import("../pages/index.vue"),
   },
   {
-    path: "/imprint",
+    path: "/impressum",
     name: "imprint",
     component: () => import("../pages/imprint.vue"),
     alias: ["/impressum"],
