@@ -31,6 +31,8 @@ const handleHoverOut = () => {
 
 onMounted(() => {
   gsap.set([".coming-soon-left", ".coming-soon-right"], { willChange: "transform", force3D: true });
+  gsap.set(".coming-soon-left", { backgroundColor: "#d1034d" });
+  gsap.set(".coming-soon-right", { backgroundColor: "#1a1a1a" });
 
   const tl = gsap.timeline({
     defaults: { ease: "none" },
@@ -63,17 +65,17 @@ onMounted(() => {
   <div
     class="coming-soon-wrapper h-screen w-screen overflow-hidden flex flex-col md:flex-row justify-center items-center">
     <div
-      class="coming-soon-left w-screen h-1/2 md:h-screen md:w-1/2 bg-d1034d flex justify-start pl-12 md:pl-auto md:justify-end items-end md:items-center"
+      class="coming-soon-left w-screen h-1/2 md:h-screen md:w-1/2 bg-[#d1034d] flex justify-start pl-12 md:pl-auto md:justify-end items-end md:items-center"
       @mouseenter="handleHoverIn" @mouseleave="handleHoverOut">
       <span id="coming"
-        class="font-semibold color-1a1a1a font-poppins text-6xl md:text-9xl mb-4 md:mb-28 mr-28 md:mr-2">
+        class="font-semibold text-[#1a1a1a] font-poppins text-6xl md:text-9xl mb-4 md:mb-28 mr-28 md:mr-2">
         Coming
       </span>
     </div>
 
     <div
-      class="coming-soon-right w-screen h-1/2 md:h-screen md:w-1/2 bg-1a1a1a flex justify-end pr-12 md:pr-auto md:justify-start md:items-center">
-      <span id="soon" class="font-semibold color-d1034d font-poppins text-6xl md:text-9xl md:mt-28 ml-28 md:ml-2">
+      class="coming-soon-right w-screen h-1/2 md:h-screen md:w-1/2 bg-[#1a1a1a] flex justify-end pr-12 md:pr-auto md:justify-start md:items-center">
+      <span id="soon" class="font-semibold text-[#d1034d] font-poppins text-6xl md:text-9xl md:mt-28 ml-28 md:ml-2">
         Soon
       </span>
     </div>
